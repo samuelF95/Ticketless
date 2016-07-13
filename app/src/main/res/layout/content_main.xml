@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.my_pc.ticketless.MainActivity"
+    android:background="#2b2929">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticket"
+            android:src="@drawable/ticket"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="#be3535"
+            android:background="#3cb91515" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Car Park"
+            android:id="@+id/button"
+            android:layout_marginTop="105dp"
+            android:textSize="18dp"
+            android:background="#00bf1616"
+            android:backgroundTint="#a23333"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignStart="@+id/button3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Card"
+            android:id="@+id/button3"
+            android:layout_marginBottom="105dp"
+            android:textSize="18dp"
+            android:background="#00ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Car"
+            android:id="@+id/button4"
+            android:textSize="18dp"
+            android:background="#00ffffff"
+            android:layout_alignTop="@+id/button3"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up"
+            android:id="@+id/button2"
+            android:onClick="openTopUpMenu"
+
+            android:textSize="18dp"
+            android:background="#00ffffff"
+            android:layout_gravity="right"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="49dp" />
+    </RelativeLayout>
+</LinearLayout>
